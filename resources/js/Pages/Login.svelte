@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-  <title>Login | Soketi UI</title>
+  <title>Login | ISoket</title>
 </svelte:head>
 
 <div class="{isShaking ? 'animate-wiggle ' : ''}h-screen flex flex-col justify-center mx-auto py-12 sm:px-6 lg:px-8">
@@ -32,7 +32,7 @@
     <div class="h-24 w-24 mx-auto">
       <img alt="Soketi Logo" src="/logo.png" />
     </div>
-    <h2 class="mt-2 text-center text-3xl font-extrabold text-gray-900">Soketi UI</h2>
+    <h2 class="mt-2 text-center text-3xl font-extrabold text-gray-900">ISoket</h2>
   </div>
 
   <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md space-y-4">

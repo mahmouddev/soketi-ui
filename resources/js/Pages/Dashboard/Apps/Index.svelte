@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Apps | Soketi UI</title>
+  <title>Apps | ISoket</title>
 </svelte:head>
 
 <Dashboard items="default" page="apps" >

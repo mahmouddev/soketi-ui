@@ -13,7 +13,7 @@ class CreateAppsTable extends Migration
      */
     public function up()
     {
-        /*Schema::create('apps', function (Blueprint $table) {
+        Schema::create('apps', function (Blueprint $table) {
             $table->string('id', 255);
             $table->string('key', 255);
             $table->string('secret', 255);
@@ -33,7 +33,7 @@ class CreateAppsTable extends Migration
             $table->json('webhooks')->nullable();
             $table->json('soketi_ui_settings')->nullable();
             $table->primary('id');
-        });*/
+        });
     }
 
     /**
@@ -43,6 +43,6 @@ class CreateAppsTable extends Migration
      */
     public function down()
     {
-        //Schema::dropIfExists('apps');
+        Schema::dropIfExists('apps');
     }
 }

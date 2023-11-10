@@ -23,7 +23,7 @@
 </script>
 
 <svelte:head>
-  <title>Webhooks - {app.title} | Soketi UI</title>
+  <title>Webhooks - {app.title} | ISoket</title>
 </svelte:head>
 
 {#if activeWebhook !== false}

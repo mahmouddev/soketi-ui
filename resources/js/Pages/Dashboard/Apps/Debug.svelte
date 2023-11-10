@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-  <title>Debug - {app.title} | Soketi UI</title>
+  <title>Debug - {app.title} | ISoket</title>
 </svelte:head>
 
 <Dashboard items="apps" page="debug" appId={app.appId} appTitle={app.title}>

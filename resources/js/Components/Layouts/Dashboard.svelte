@@ -72,7 +72,7 @@
             <div class="h-10 w-10">
               <img alt="Soketi Logo" src="/logo.png" />
             </div>
-            <h1 class="text-2xl font-semibold">Soketi UI</h1>
+            <h1 class="text-2xl font-semibold">ISoket</h1>
         </div>
         <div class="mt-5 flex-grow flex flex-col">
           <nav class="flex-1 px-2 pb-4 space-y-1">

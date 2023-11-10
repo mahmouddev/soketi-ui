@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-  <title>Limits - {app.title} | Soketi UI</title>
+  <title>Limits - {app.title} | ISoket</title>
 </svelte:head>
 
 <Dashboard items="apps" page="limits" appId={app.appId} appTitle={app.title}>

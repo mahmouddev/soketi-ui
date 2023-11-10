@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-  <title>Credentials - {app.title} | Soketi UI</title>
+  <title>Credentials - {app.title} | ISoket</title>
 </svelte:head>
 
 <Dashboard items="apps" page="credentials" appId={app.appId} appTitle={app.title}>
