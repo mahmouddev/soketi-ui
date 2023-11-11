@@ -9,17 +9,35 @@
     export let app;
     export let debugEvents;
 
-    const pusher = new Pusher('app-key', {
-        wsHost: '127.0.0.1',
-        wsPort: 6001,
-        forceTLS: false,
+    const pusher = new Pusher(app.appKey, {
+        // wsHost: process.env.HOST,
+        // wsPort: 6001,
+        // forceTLS: false,
+        // encrypted: true,
+        // enabledTransports: ['ws', 'wss'],
+        cluster:process.env.MIX_PUSHER_APP_CLUSTER,
+        wsHost: process.env.MIX_PUSHER_HOST,
+        wsPort: process.env.MIX_PUSHER_PORT,
+        wssPort: process.env.MIX_PUSHER_PORT,
         encrypted: true,
+        forceTLS: (process.env.MIX_PUSHER_SCHEME ?? 'https') === 'https',
         enabledTransports: ['ws', 'wss'],
+    });
+
+    pusher.connection.bind('connected', function() {
+    
+        console.log('connected !!');
+    });
+    
+    pusher.connection.bind('error', function() {
+        
+        console.log('error !!')
     });
 
     const channel = pusher.subscribe('debug-events_' + app['appId']);
 
     channel.bind("App\\Events\\NewDebugEvents", (data) => {
+        
         debugEvents = [...debugEvents, ...data];
     });
 </script>
